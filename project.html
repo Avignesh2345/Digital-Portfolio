@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Business Card Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Virtual Business Card</h1>
+    <form id="business-card-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required><br>
+      
+      <label for="title">Job Title:</label>
+      <input type="text" id="title" placeholder="Enter your job title" required><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required><br>
+      
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" placeholder="Enter your phone number" required><br>
+      
+      <label for="company">Company:</label>
+      <input type="text" id="company" placeholder="Enter your company" required><br>
+      
+      <button type="submit">Generate Card</button>
+    </form>
+
+    <div id="business-card" class="card" style="display:none;">
+      <h2 id="card-name"></h2>
+      <p id="card-title"></p>
+      <p id="card-email"></p>
+      <p id="card-phone"></p>
+      <p id="card-company"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
